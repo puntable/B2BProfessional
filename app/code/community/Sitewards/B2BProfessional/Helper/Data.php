@@ -89,7 +89,8 @@ class Sitewards_B2BProfessional_Helper_Data extends Sitewards_B2BProfessional_He
      */
     public function getLoginMessage()
     {
-        return $this->getStoreConfig(self::CONFIG_EXTENSION_LOGIN_MESSAGE, 'sLoginMessage');
+        $loginMessage = '<span class="login-message">' . $this->getStoreConfig(self::CONFIG_EXTENSION_LOGIN_MESSAGE, 'sLoginMessage') . '</span>';
+        return $loginMessage;
     }
 
     /**
